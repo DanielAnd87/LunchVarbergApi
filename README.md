@@ -70,7 +70,7 @@ GO
 
 CREATE TABLE [dbo].[UserCredentials](
 	[id] [int] NOT NULL,
-	[username] [varchar](40) NOT NULL,
+	[username] [varchar](40) UNIQUE NOT NULL,
 	[password] [varchar](40) NOT NULL,
 	[isAdmin] [bit] NOT NULL,
  CONSTRAINT [PK__UserCred__3213E83F90AB0A15] PRIMARY KEY CLUSTERED 
